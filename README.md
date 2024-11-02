@@ -1,2 +1,2 @@
-# cma_cds
-CMA CDS
+# CMA CDS
+CMA CDS eğitiminin örnek kodları
