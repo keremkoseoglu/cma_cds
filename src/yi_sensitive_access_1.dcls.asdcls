@@ -1,0 +1,12 @@
+@EndUserText.label: 'CDS 1 yetki kontrolü'
+@MappingRole: true
+define role YI_SENSITIVE_ACCESS_1 {
+  grant
+    select
+      on
+        YI_SENSITIVE_INVOICE_1
+          where
+            _customer.country = 'DE'
+            or _customer.country = 'IT';
+            
+}

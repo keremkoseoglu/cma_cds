@@ -1,0 +1,11 @@
+@EndUserText.label: 'PFCG yetki kontrolü'
+@MappingRole: true
+define role YI_SENSITIVE_ACCESS_3 {
+  grant 
+    select
+      on
+        YI_SENSITIVE_INVOICE_3
+          where
+            (carrid) = aspect pfcg_auth(S_CARRID, carrid, actvt = '03');
+            
+}
